@@ -4,11 +4,17 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build:dev": "vue-cli-service build development",
+    "build:prod": "vue-cli-service build production",
+    "lint": "vue-cli-service lint",
+    "lint:ext": "eslint --ext .jsx,.js,.vue src/",
+    "lint:fix": "eslint --fix --ext .jsx,.js,.vue src/",
+    "prepare": "husky install"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "lint-staged": "^13.2.0",
+    "nprogress": "^0.2.0",
     "register-service-worker": "^1.7.2",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
@@ -27,6 +33,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
+    "husky": "^8.0.3",
     "less": "^4.0.0",
     "less-loader": "^8.0.0",
     "prettier": "^2.4.1",
