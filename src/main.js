@@ -4,6 +4,7 @@ import './registerServiceWorker';
 import router from './router';
 import store from './store';
 import { useAntdComponents } from '@/extends/antd';
+import '@/assets/svgs';
 import './router/permission';
 
 Vue.config.productionTip = false;
